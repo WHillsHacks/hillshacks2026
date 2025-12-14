@@ -6,12 +6,22 @@ on:
       - main
   workflow_dispatch: {}
 
+# Ensure the workflow has explicit permissions so the GITHUB_TOKEN can push
+permissions:
+  contents: write
+  pages: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # ensure the checked-out repo uses the workflow token for pushes
+          persist-credentials: true
+          # fetch full history so peaceiris action can create commits/tags if needed
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
