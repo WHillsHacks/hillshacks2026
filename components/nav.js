@@ -1,4 +1,5 @@
-import { Flex, Box, Image, Container, NavLink } from 'theme-ui';
+import { Flex, Box, Container, NavLink } from 'theme-ui';
+import Image from '../components/themed-image';
 import ColorSwitcher from '../components/color-switcher';
 
 const Nav = props => {

@@ -7,7 +7,7 @@ const makeTitle = (title, name) =>
 const Meta = ({
   title = 'hillsHacks', // page title
   name = 'hillsHacks', // site name
-  description = "Watchung Hills' 8th annual hackathon, inspiring the next generation of makers.", // page description
+  description = "Watchung Hills' 9th annual hackathon, inspiring the next generation of makers.", // page description
   image = '', // social card image URL
   url = 'https://hillshacks.com', // page URL
   children,

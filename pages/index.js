@@ -7,7 +7,6 @@ import {
   Heading,
   Text,
   Button,
-  Image,
   Container,
   Grid,
   Card,
@@ -15,6 +14,7 @@ import {
   Link,
   Alert
 } from 'theme-ui'
+import Image from '../components/themed-image';
 
 import React from 'react'
 

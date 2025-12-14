@@ -1,4 +1,5 @@
-import { Box, Image, Container, Text, Heading, Button } from 'theme-ui';
+import { Box, Container, Text, Heading, Button } from 'theme-ui';
+import Image from '../components/themed-image';
 import { backgroundImage } from './background-image';
 import { mountains } from './mountains';
 import { HERO_DATE } from '../lib/constants';
