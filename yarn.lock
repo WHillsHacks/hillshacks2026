@@ -1085,9 +1085,9 @@ property-information@^5.0.0, property-information@^5.3.0:
   dependencies:
     xtend "^4.0.0"
 
-react-accessible-accordion@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.npmjs.org/react-accessible-accordion/-/react-accessible-accordion-5.0.0.tgz"
+react-accessible-accordion@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/react-accessible-accordion/-/react-accessible-accordion-5.0.1.tgz#b406822d28e945bf7c2ffefbcd484bd6a8e679f5"
 
 react-dom@^17.0.2:
   version "17.0.2"
