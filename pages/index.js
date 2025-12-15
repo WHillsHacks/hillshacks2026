@@ -22,7 +22,7 @@ import Faq from '../components/accordion'
 import Nav from '../components/nav'
 import Hero from '../components/hero'
 import Stats from '../components/stats'
-import { EVENT_FULL, LOCATION_URL, EVENT_YEAR, ENTRY_FEE, REGISTRATION_EMBED_URL, MAP_QUERY, SPONSOR_PACKET_URL, MAILTO } from '../lib/constants'
+import { EVENT_FULL, LOCATION_URL, EVENT_YEAR, ENTRY_FEE, REGISTRATION_EMBED_URL, MAP_QUERY, SPONSOR_PACKET_URL, MAILTO, EVENT_ITERATION } from '../lib/constants'
 
 const Index = props => (
   <>
@@ -54,7 +54,7 @@ const Index = props => (
       </Text>
       <Text variant="lead">
         <b>
-          This is the ninth iteration of hillsHacks, Watchung Hills' premier
+          This is the {EVENT_ITERATION} iteration of hillsHacks, Watchung Hills' premier
           hackathon open to students grades 7 through 12.
         </b>
       </Text>
