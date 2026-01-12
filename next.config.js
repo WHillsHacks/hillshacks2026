@@ -1,6 +1,6 @@
 const withMDX = require('@next/mdx')({ extension: /\.mdx?$/ })
 
-const basePath = '/hillshacks2026';
+const basePath = '/';
 
 module.exports = withMDX({
     pageExtensions: ['js', 'mdx'],
