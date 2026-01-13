@@ -2,31 +2,29 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [$default-branch]
   workflow_dispatch: {}
 
-# Ensure the workflow has explicit permissions so the GITHUB_TOKEN can push
 permissions:
-  contents: write
+  contents: read
   pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          # ensure the checked-out repo uses the workflow token for pushes
-          persist-credentials: true
-          # fetch full history so peaceiris action can create commits/tags if needed
-          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20.19.6'
+          node-version: '20'
           cache: 'npm'
 
       - name: Install dependencies
@@ -35,9 +33,10 @@ jobs:
       - name: Build and export static site
         run: npm run build:export
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
-          publish_branch: gh-pages
+          path: ./out
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
