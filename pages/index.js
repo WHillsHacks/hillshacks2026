@@ -228,7 +228,7 @@ const Index = props => (
       </Card>
     </Container>
     <footer sx={{ textAlign: 'center', padding: 4 }}>
-      <Text as="p" mb={2} sx={{ fontSize: 1 }}>
+      {/* <Text as="p" mb={2} sx={{ fontSize: 1 }}>
         Previous years:{' '}
         <Link href="https://hills-hacks-2024.vercel.app/">2024</Link> |{' '}
         <Link href="https://2023.hillshacks.com/">2023</Link> |{' '}
@@ -237,7 +237,7 @@ const Index = props => (
         <Link href="https://2020.hillshacks.com/">2020</Link> |{' '}
         <Link href="https://2019.hillshacks.com/">2019</Link> |{' '}
         <Link href="https://github.com/googol88/hillshacks-vi">2018</Link>
-      </Text>
+      </Text> */}
       <Text as="p" mb={2} sx={{ fontSize: 1 }}>
         Created with &#x3C;3 by the Watchung Hills CS Club. See the{' '}
         <Link href="https://github.com/LiterallyCanada312/HillsHacks2025">source</Link>.
