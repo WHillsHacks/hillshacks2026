@@ -1,5 +1,6 @@
 import React, {useEffect, useState, useRef} from 'react'
 import { Box, Text, Heading } from 'theme-ui'
+import { STUDENT_COUNT, YEARS_RUNNING, PRIZE_MONEY } from '../lib/constants'
 
 const Counter = ({value = 0, duration = 960, prefix = '', suffix = '', start = false, fontSize = [4,5]}) => {
   const [count, setCount] = useState(0)
@@ -91,9 +92,9 @@ const StatBox = ({label, value, prefix, suffix, icon}) => {
 
 const Stats = props => (
     <Box sx={{ display: 'flex', gap: 4, justifyContent: 'center', alignItems: 'stretch', py: 3, flexWrap: 'wrap' }} {...props}>
-    <StatBox label="Students" value={60} icon={<IconStudents/>} />
-    <StatBox label="Years" value={7} icon={<IconYears/>} />
-    <StatBox label="Prize money" value={100} prefix="$" icon={<IconPrize/>} />
+    <StatBox label="Students" value={STUDENT_COUNT} icon={<IconStudents/>} />
+    <StatBox label="Years" value={YEARS_RUNNING} icon={<IconYears/>} />
+    <StatBox label="Prize money" value={PRIZE_MONEY} prefix="$" icon={<IconPrize/>} />
   </Box>
 )
 

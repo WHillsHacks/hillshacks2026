@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import theme from '../lib/theme'
+import { SITE_DESCRIPTION } from '../lib/constants'
 
 const makeTitle = (title, name) =>
   title === name ? title : `${title} – ${name}`
@@ -7,7 +8,7 @@ const makeTitle = (title, name) =>
 const Meta = ({
   title = 'hillsHacks', // page title
   name = 'hillsHacks', // site name
-  description = "Watchung Hills' 9th annual hackathon, inspiring the next generation of makers.", // page description
+  description = SITE_DESCRIPTION, // page description
   image = '', // social card image URL
   url = 'https://hillshacks.com', // page URL
   children,

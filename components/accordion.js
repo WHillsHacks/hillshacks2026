@@ -8,7 +8,7 @@ import {
   AccordionItemPanel,
 } from 'react-accessible-accordion'
 import { Link } from 'theme-ui'
-import { EVENT_FULL, REGISTRATION_FORM_URL, LOCATION_URL, MAILTO, ENTRY_FEE } from '../lib/constants'
+import { EVENT_FULL, REGISTRATION_FORM_URL, LOCATION_URL, MAILTO, ENTRY_FEE, MIN_GRADE } from '../lib/constants'
 
 const Faq = () => {
   return (
@@ -24,7 +24,7 @@ const Faq = () => {
             completely changed the way we live our lives. Regardless of your
             experience, you will learn something new at hillsHacks about how
             computer science is being used all around us — often in things we
-            take for granted! All students in grades 7 and up are welcome.
+            take for granted! All students in grades {MIN_GRADE} and up are welcome.
           </p>
         </AccordionItemPanel>
       </AccordionItem>

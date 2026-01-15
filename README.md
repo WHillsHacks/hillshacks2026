@@ -1,6 +1,6 @@
-# hillsHacks 2026
+# hillsHacks
 
-The source of the website powering hillsHack's ninth annual hackathon. Made with Next.js and Theme UI.
+The source of the website powering hillsHack's annual hackathon. Made with Next.js and Theme UI.
 
 See the [source](https://github.com/googol88/hillshacks-vi) of last year's website
 

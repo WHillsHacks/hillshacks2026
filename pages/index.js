@@ -22,7 +22,7 @@ import Faq from '../components/accordion'
 import Nav from '../components/nav'
 import Hero from '../components/hero'
 import Stats from '../components/stats'
-import { EVENT_FULL, LOCATION_URL, EVENT_YEAR, ENTRY_FEE, REGISTRATION_EMBED_URL, MAP_QUERY, SPONSOR_PACKET_URL, MAILTO, EVENT_ITERATION } from '../lib/constants'
+import { EVENT_FULL, LOCATION_URL, EVENT_YEAR, ENTRY_FEE, REGISTRATION_EMBED_URL, MAP_QUERY, SPONSOR_PACKET_URL, MAILTO, EVENT_ITERATION, MIN_GRADE, MAX_GRADE, GITHUB_REPO_URL } from '../lib/constants'
 
 const Index = props => (
   <>
@@ -55,7 +55,7 @@ const Index = props => (
       <Text variant="lead">
         <b>
           This is the {EVENT_ITERATION} iteration of hillsHacks, Watchung Hills' premier
-          hackathon open to students grades 7 through 12.
+          hackathon open to students grades {MIN_GRADE} through {MAX_GRADE}.
         </b>
       </Text>
       <br />
@@ -101,7 +101,7 @@ const Index = props => (
         <Text as="p"><b>Where:</b> <Link href="#map">Watchung Hills Regional High School</Link> (108 Stirling Rd, Warren, NJ 07059)</Text><br/>
         <Text as="p"><b>When:</b> {EVENT_FULL}</Text><br/>
         <Text as="p"><b>Cost:</b> There will be an entry fee of {ENTRY_FEE} to cover costs for food and T-shirts for all attendees!</Text><br/>
-        <Text as="p"><b>Who:</b> All students in grades 7 and up are welcome to attend, regardless of experience!</Text>
+        <Text as="p"><b>Who:</b> All students in grades {MIN_GRADE} and up are welcome to attend, regardless of experience!</Text>
       </Card>
     </Container>
     <Container id="faq" as="section" py={4} {...props}>
@@ -240,7 +240,7 @@ const Index = props => (
       </Text> */}
       <Text as="p" mb={2} sx={{ fontSize: 1 }}>
         Created with &#x3C;3 by the Watchung Hills CS Club. See the{' '}
-        <Link href="https://github.com/LiterallyCanada312/HillsHacks2025">source</Link>.
+        <Link href={GITHUB_REPO_URL}>source</Link>.
       </Text>
         <Text as="p" sx={{ fontSize: 1, color: 'muted' }}>
         © Copyright {EVENT_YEAR} hillsHacks
