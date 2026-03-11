@@ -31,7 +31,7 @@ const Hero = props => (
       />
       <Heading my={2} variant="subtitle" color="white" sx={{textShadow: "0 0 32px #000"}}>{HERO_DATE}</Heading>
       <Text mt={2} mb={4} sx={{display: "block", textShadow: "0 0 32px #000"}} color="white">In-Person, Watchung Hills Regional High School</Text>
-      <Button variant="lg" as="a" my={2} href="#mailing">Join our mailing list</Button>
+      <Button variant="lg" as="a" my={2} href="#mailing">Register Now - Save $5</Button>
     </Container>
   </Box> 
 )
