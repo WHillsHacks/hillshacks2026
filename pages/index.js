@@ -121,7 +121,7 @@ const Index = props => (
         Schedule
       </Heading>
       <Image 
-        src="/APznzaYmTz-WX3WS2umHgEEdszfy2rysHR-z25iPOqp8qXy8y1pnoNgGqLa-tkvVaZJ7ADABlHhkzvOljTH_3M9a_WnX-mYE8PPKmh4_UEgGGw0MzqryS9IPwWomhoHO9kz3mV33iSe4T_laXFTRghkHkgC7gHCIi2JdLr1qQLxOe-PlT_keqHCGjtKVDYXdgcFkT-CD3HMw5M0JGwdqh8.jpg"
+        src="https://drive.google.com/file/d/1ShvCY4PdaYJ4rB510m8Lfq124Hh9WACO/view?usp=drive_link"
         sx={{
           width: '100%',
           maxWidth: '720px',
@@ -144,7 +144,7 @@ const Index = props => (
 
     {/* Mailing list / registration embed */}
     <Container id="mailing" as="section" py={4} variant="copy" {...props}>
-      <Heading variant="headline">Join our mailing list</Heading>
+      <Heading variant="headline">Register Now - Save $5</Heading>
       <Text as="p" mb={3}>Stay updated — sign up for announcements and updates.</Text>
       <Box sx={{ display: 'flex', justifyContent: 'center' }}>
         <iframe
