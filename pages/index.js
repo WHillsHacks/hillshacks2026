@@ -49,7 +49,7 @@ const Index = props => (
         questions about tech during our <b>Panel Q&A</b> session. Deviating from
         the traditional hackathon, there will be a no-code{' '}
         <b>design challenge</b>, with a greater emphasis on ideas and how
-        technology can be used for good. Participants can win generous cash{' '}
+        technology can be used for good. Participants can win generous {' '}
         <b>prizes</b>, too!
       </Text>
       <Text variant="lead">
