@@ -94,7 +94,7 @@ const Stats = props => (
     <Box sx={{ display: 'flex', gap: 4, justifyContent: 'center', alignItems: 'stretch', py: 3, flexWrap: 'wrap' }} {...props}>
     <StatBox label="Students" value={STUDENT_COUNT} icon={<IconStudents/>} />
     <StatBox label="Years" value={YEARS_RUNNING} icon={<IconYears/>} />
-    <StatBox label="Prize money" value={PRIZE_MONEY} prefix="$" icon={<IconPrize/>} />
+    <StatBox label="In Prizes" value={PRIZE_MONEY} prefix="$" icon={<IconPrize/>} />
   </Box>
 )
 
