@@ -121,7 +121,7 @@ const Index = props => (
         Schedule
       </Heading>
       <Image 
-        src="public/Schedule2026.png"
+        src="/Schedule2026.png"
         alt="details coming soon"
         sx={{
           width: '100%',
